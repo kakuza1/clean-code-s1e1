@@ -80,7 +80,7 @@
   text-transform: uppercase;
 }
 
-#input-edit {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -151,7 +151,7 @@
 
 /* Completed */
 
-#completed-label {
+#completed-list .task.label-list {
   text-decoration: line-through;
   color: #888;
 }
@@ -169,4 +169,17 @@
 
 #hidden {
   display: none;
+}
+
+ul li.edit-mode input[type=text] {
+    display:inline-block;
+    width:224px
+}
+
+ul li.edit-mode label {
+    display:none;
+}
+
+ul li input[type=text] {
+    display:none
 }

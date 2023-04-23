@@ -18,9 +18,10 @@ var completedTasksHolder=document.getElementById("completed-list");//completed-t
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-
+    listItem.className = 'list-item';
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input"); 
+    checkBox.className = 'input-checkbox input'//checkbox
     //label
     var label=document.createElement("label");//label
     //input (text)
@@ -30,7 +31,8 @@ var createNewTaskElement=function(taskString){
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
+    var deleteButtonImg=document.createElement("img");
+    deleteButtonImg.className = 'remove-icon'//delete button image
 
     label.innerText=taskString;
     label.className='task label-list';
@@ -38,12 +40,12 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task input-hidden input";
+    editInput.className="task input-hidden input input-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit buttons";
 
-    deleteButton.className="delete";
+    deleteButton.className="delete buttons";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -123,7 +125,7 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
+    
 }
 
 
@@ -133,6 +135,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
