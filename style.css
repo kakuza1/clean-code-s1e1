@@ -43,7 +43,7 @@
   padding: 0px;
 }
 
-.ul-list, 
+.list-item, 
 .title {
   list-style: none;
 }
@@ -110,7 +110,7 @@
 
 /* Task list */
 
-.ul-list {
+.list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -119,23 +119,23 @@
   align-items: center;
 }
 
-.ul-list > * {
+.list-item > * {
   vertical-align: middle;
 }
 
 
-.ul-list > .input-checkbox {
+.list-item > .input-checkbox {
   margin: 0 10px;
 }
 
-.ul-list > .label-list {
+.list-item > .label-list {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.ul-list > .task {
+.list-item > .task {
     width: 226px;
 }
 
