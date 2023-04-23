@@ -43,11 +43,13 @@
   padding: 0px;
 }
 
-.ul-list, .title {
+.ul-list, 
+.title {
   list-style: none;
 }
 
-.input, .buttons{
+.input,
+.buttons{
   outline: none;
 }
 
