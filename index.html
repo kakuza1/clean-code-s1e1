@@ -13,28 +13,28 @@
   <div class="main">
     <p id="main-add">
       <label class="new-task" for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task" class="task" type="text">
+      <div class="task-row-wrapper"><input class="task input" type="text">
         <button class="buttons">Add</button>
       </div>
     </p>
     <h3 class="title">Todo</h3>
-    <ul id="todo-list">
+    <ul id="todo-list" class="list">
       <li class="ul-list">
-        <input class="input-checkbox" type="checkbox"><label class="task label-list">Pay Bills</label>
-        <input type="text" class="task input-hidden"><button class="edit buttons">Edit</button>
+        <input class="input-checkbox input" type="checkbox"><label class="task label-list">Pay Bills</label>
+        <input type="text" class="task input-hidden input"><button class="edit buttons">Edit</button>
         <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
       </li>
       <li class="edit-mode ul-list">
-        <input class="input-checkbox" type="checkbox"><label id="hidden" class="task label-list">Go Shopping</label>
-        <input id="input-edit" type="text" value="Go Shopping" class="task"><button class="edit buttons">Save</button>
+        <input class="input-checkbox input" type="checkbox"><label id="hidden" class="task label-list">Go Shopping</label>
+        <input id="input-edit" type="text" value="Go Shopping" class="task input"><button class="edit buttons">Save</button>
         <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
       </li>
     </ul>
     <h3 class="title">Completed</h3>
-    <ul id="completed-list">
+    <ul id="completed-list" class="list">
       <li class="ul-list">
-      <input class="input-checkbox" type="checkbox" checked><label id="completed-label" class="task label-list">See the Doctor</label>
-      <input type="text" class="task input-hidden"><button class="edit buttons">Edit</button>
+      <input class="input-checkbox input" type="checkbox" checked><label id="completed-label" class="task label-list">See the Doctor</label>
+      <input type="text" class="task input-hidden input"><button class="edit buttons">Edit</button>
       <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
       </li>
     </ul>

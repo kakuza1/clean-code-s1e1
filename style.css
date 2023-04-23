@@ -34,14 +34,14 @@
 .task-row-wrapper {
     display: flex;
 }
-ul {
+.list {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.ul-list, .title {
     list-style:none;
 }
-input,button{
+.input, .buttons{
     outline:none;
 }
 .buttons {
@@ -67,7 +67,7 @@ input,button{
     margin: 0;
     text-transform: uppercase;
 }
-#new-task {
+#input-edit {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
