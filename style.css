@@ -39,16 +39,16 @@
 }
 
 .list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .ul-list, .title {
-  list-style:none;
+  list-style: none;
 }
 
 .input, .buttons{
-  outline:none;
+  outline: none;
 }
 
 .buttons {
@@ -157,14 +157,14 @@
 /* Edit Task */
 
 .input-hidden {
-    display:none
+    display: none
 }
 
 #input-edit {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 #hidden {
-  display:none;
+  display: none;
 }
