@@ -31,7 +31,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -133,8 +133,8 @@
   width: 226px;
 }
 
-.ul-list >    .task {
-    width: 226px
+.ul-list > .task {
+    width: 226px;
 }
 
 .delete .remove-icon {
@@ -150,19 +150,19 @@
 /* Completed */
 
 #completed-label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
 .input-hidden {
-    display: none
+    display: none;
 }
 
 #input-edit {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 #hidden {
