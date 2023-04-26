@@ -3,31 +3,32 @@
 <head>
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
+  <meta charset="UTF-8">
 </head>
 <body class="page">
-  <div class="header">
-    <img id="header-img" src="./eisenhower-matrix.jpg">
+  <header class="header">
+    <img id="header-img" alt="matrix-eisenhower" src="./eisenhower-matrix.jpg">
     <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main">
-    <p id="main-add">
+  </header>
+  <main class="main"> 
+    <section id="main-add">
       <label class="new-task" for="new-task">Add Item</label>
       <div class="task-row-wrapper"><input id="new-task" class="task input" type="text">
         <button class="buttons">Add</button>
       </div>
-    </p>
+    </section>
     <h3 class="title">Todo</h3>
-    <ul id="todo-list" class="list">
+    <ul class="list">
       <li class="list-item">
         <input class="input-checkbox input" type="checkbox"><label class="task label-list">Pay Bills</label>
         <input type="text" class="task input-hidden input input-text"><button class="edit buttons">Edit</button>
-        <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
+        <button class="delete buttons"><img class="remove-icon" alt="remove-icon" src="./remove.svg"></button>
       </li>
       <li class="edit-mode list-item">
         <input class="input-checkbox input" type="checkbox"><label class="task label-list">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task input input-text"><button class="edit buttons">Save</button>
-        <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
+        <button class="delete buttons"><img class="remove-icon" alt="remove-icon" src="./remove.svg"></button>
       </li>
     </ul>
     <h3 class="title">Completed</h3>
@@ -35,10 +36,10 @@
       <li class="list-item">
       <input class="input-checkbox input" type="checkbox" checked><label class="task label-list completed-label">See the Doctor</label>
       <input type="text" class="task input-hidden input input-text"><button class="edit buttons">Edit</button>
-      <button class="delete buttons"><img class="remove-icon" src="./remove.svg"></button>
+      <button class="delete buttons"><img class="remove-icon" alt="remove-icon" src="./remove.svg"></button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
