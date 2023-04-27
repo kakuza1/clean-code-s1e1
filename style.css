@@ -38,7 +38,8 @@
   display: flex;
 }
 
-.list {
+.list,
+.todo-list {
   margin: 0;
   padding: 0px;
 }
@@ -64,7 +65,7 @@
 }
 
 .buttons:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
@@ -86,8 +87,8 @@
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -171,15 +172,15 @@
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
-    display:inline-block;
-    width:224px
+.edit-mode .input-text {
+    display: inline-block;
+    width: 224px;
 }
 
-ul li.edit-mode label {
-    display:none;
+.edit-mode .label-list {
+    display: none;
 }
 
-ul li input[type=text] {
-    display:none
+.input-text {
+    display: none;
 }
